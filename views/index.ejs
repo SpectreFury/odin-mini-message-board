@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+  </head>
+  <body>
+    <h1>MINI MESSAGEBOARD</h1>
+    <ul>
+      <% for(let message of messages) { %>
+      <li>
+        <h2><%= message.text %></h2>
+        <p><%= message.user %></p>
+      </li>
+
+      <% } %>
+    </ul>
+    <a href="/new">Add</a>
+  </body>
+</html>
