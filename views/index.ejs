@@ -6,7 +6,7 @@
     <title><%=title%></title>
   </head>
   <body>
-    <h1>MINI MESSAGEBOARD</h1>
+    <%- include('partials/navbar') %>
     <ul>
       <% for(let message of messages) { %>
       <li>
